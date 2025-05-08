@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V5数字武馆 - 传统与现代的完美融合</title>
+    <!-- 引入字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- 引入图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- 引入动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/logo.svg" alt="武术科技">
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">首页</a>
+            <a href="#styles">武术流派</a>
+            <a href="#videos">教学视频</a>
+            <a href="#about">关于我们</a>
+            <a href="#contact">联系方式</a>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="搜索...">
+            <i class="fas fa-search"></i>
+        </div>
+    </nav>
+
+    <!-- 英雄区 -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="v5-text">V5</div>
+        </div>
+        <div class="hero-content">
+            <h1 class="animate__animated animate__fadeIn">传统武术与现代科技的完美融合</h1>
+            <p class="animate__animated animate__fadeIn animate__delay-1s">探索武术的奥秘，感受科技的力量</p>
+            <button class="cta-button animate__animated animate__fadeIn animate__delay-2s">开始探索</button>
+        </div>
+        <div class="particle-background"></div>
+    </section>
+
+    <!-- 特色介绍区 -->
+    <section class="features-section">
+        <div class="feature-card">
+            <i class="fas fa-yin-yang"></i>
+            <h3>传统武术</h3>
+            <p>传承千年武术精髓，融合现代教学理念</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-vr-cardboard"></i>
+            <h3>VR技术</h3>
+            <p>身临其境的武术体验，突破传统学习限制</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-graduation-cap"></i>
+            <h3>专业教学</h3>
+            <p>资深武术大师亲自指导，系统化学习体系</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-users"></i>
+            <h3>社区互动</h3>
+            <p>与志同道合的武术爱好者共同进步</p>
+        </div>
+    </section>
+
+    <!-- 数据展示区 -->
+    <section class="stats-section">
+        <div class="stat-item">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">学员数量</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">专业教练</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">武术流派</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">学员满意度</div>
+        </div>
+    </section>
+
+    <!-- 武术流派分类区 -->
+    <section id="styles" class="styles-section" style="position:relative; overflow:hidden;">
+        <!-- 引导文案 -->
+        <div style="text-align:center;color:#fff;font-size:1.25rem;margin-bottom:1.5rem;position:relative;z-index:1;letter-spacing:2px;font-family:'ZCOOL KuaiLe','KaiTi','Noto Serif SC',serif;">
+            探索中华武术的多样魅力，选择你心仪的流派开启修炼之路。
+        </div>
+        <h2 style="position:relative;z-index:1;font-size:2.8rem;color:#ffd700;letter-spacing:8px;font-family:'ZCOOL KuaiLe','KaiTi','Noto Serif SC',serif;text-shadow:0 4px 18px rgba(255,215,0,0.18);margin-bottom:0.5rem;">武术流派</h2>
+        <div style="text-align:center;color:var(--text-color);font-size:2rem;font-weight:bold;margin-bottom:2rem;position:relative;z-index:1;letter-spacing:4px;font-family:'ZCOOL KuaiLe','KaiTi','Noto Serif SC',serif;">传承经典，百家争鸣</div>
+        <div class="styles-grid" style="position:relative;z-index:1;color:var(--text-color);">
+            <!-- 流派卡片将通过JavaScript动态生成 -->
+        </div>
+        <!-- 武术文化小知识卡片 -->
+        <div style="display:flex;justify-content:center;gap:32px;margin:2.5rem 0 1.5rem 0;position:relative;z-index:1;flex-wrap:wrap;">
+            <div class="art-card" style="font-size:1.1rem;">
+                <div class="card-title" style="font-size:1.5rem;letter-spacing:3px;">武德为先</div>
+                中国武术讲究"德艺双修"，强调修身养性、尊师重道。
+            </div>
+            <div class="art-card" style="font-size:1.1rem;">
+                <div class="card-title" style="font-size:1.5rem;letter-spacing:3px;">流派纷呈</div>
+                中华武术流派众多，南北风格各异，内外兼修，百花齐放。
+            </div>
+            <div class="art-card" style="font-size:1.1rem;">
+                <div class="card-title" style="font-size:1.5rem;letter-spacing:3px;">文化瑰宝</div>
+                武术不仅是技击，更是中华民族宝贵的非物质文化遗产。
+            </div>
+        </div>
+    </section>
+
+    <!-- 太极展示区 -->
+    <section id="taichi" class="taichi-section">
+        <h2>太极拳</h2>
+        <div class="taichi-gallery">
+            <div class="gallery-item">
+                <img src="TJ1.jpg" alt="太极拳展示1">
+                <div class="gallery-caption">太极拳 - 基本功训练</div>
+            </div>
+            <div class="gallery-item">
+                <img src="TJ2.jpg" alt="太极拳展示2">
+                <div class="gallery-caption">太极拳 - 拳法展示</div>
+            </div>
+            <div class="gallery-item">
+                <img src="TJ3.jpg" alt="太极拳展示3">
+                <div class="gallery-caption">太极拳 - 器械训练</div>
+            </div>
+            <div class="gallery-item">
+                <img src="TJ1.jpg" alt="太极拳展示4">
+                <div class="gallery-caption">太极拳 - 对练展示</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 咏春展示区 -->
+    <section id="wingchun" class="wingchun-section">
+        <h2>咏春拳</h2>
+        <div class="wingchun-gallery">
+            <div class="gallery-item">
+                <img src="YC1.jpg" alt="咏春拳展示1">
+                <div class="gallery-caption">咏春拳 - 基本功训练</div>
+            </div>
+            <div class="gallery-item">
+                <img src="YC2.jpg" alt="咏春拳展示2">
+                <div class="gallery-caption">咏春拳 - 拳法展示</div>
+            </div>
+            <div class="gallery-item">
+                <img src="YC3.jpg" alt="咏春拳展示3">
+                <div class="gallery-caption">咏春拳 - 器械训练</div>
+            </div>
+            <div class="gallery-item">
+                <img src="YC4.jpg" alt="咏春拳展示4">
+                <div class="gallery-caption">咏春拳 - 对练展示</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 少林功夫展示区 -->
+    <section id="shaolin" class="shaolin-section">
+        <h2>少林功夫</h2>
+        <div class="shaolin-gallery">
+            <div class="gallery-item">
+                <img src="2c150f6f50dc5709bc3c5db16338e33.jpg" alt="少林功夫展示1">
+                <div class="gallery-caption">少林功夫 - 基本功训练</div>
+            </div>
+            <div class="gallery-item">
+                <img src="b10c53519dc5a8f75e6609dc457c827.jpg" alt="少林功夫展示2">
+                <div class="gallery-caption">少林功夫 - 拳法展示</div>
+            </div>
+            <div class="gallery-item">
+                <img src="ad239139903e4612ca9e3f003fe4284.jpg" alt="少林功夫展示3">
+                <div class="gallery-caption">少林功夫 - 器械训练</div>
+            </div>
+            <div class="gallery-item">
+                <img src="732c3c1b1b0df6c4b13781d0a6c2995.jpg" alt="少林功夫展示4">
+                <div class="gallery-caption">少林功夫 - 对练展示</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 精选视频展示区 -->
+    <section id="videos" class="videos-section">
+        <h2>精选视频</h2>
+        <div class="video-player">
+            <video id="main-video" controls>
+                <source src="" type="video/mp4">
+            </video>
+        </div>
+        <div class="video-categories">
+            <button class="category-btn active">全部</button>
+            <button class="category-btn">太极拳</button>
+            <button class="category-btn">少林功夫</button>
+            <button class="category-btn">咏春拳</button>
+        </div>
+        <div class="video-grid">
+            <!-- 视频缩略图将通过JavaScript动态生成 -->
+        </div>
+    </section>
+
+    <!-- 教学区块 -->
+    <section id="teaching" class="teaching-section">
+        <h2>分级教学</h2>
+        <div class="teaching-levels">
+            <div class="level-card">
+                <h3>初级</h3>
+                <div class="level-content">
+                    <!-- 初级内容将通过JavaScript动态生成 -->
+                    <video controls style="width:100%;max-width:600px;margin:20px 0;">
+                        <source src="JXSP1.mp4" type="video/mp4">
+                        您的浏览器不支持视频播放。
+                    </video>
+                </div>
+            </div>
+            <div class="level-card">
+                <h3>中级</h3>
+                <div class="level-content">
+                    <!-- 中级内容将通过JavaScript动态生成 -->
+                    <video controls style="width:100%;max-width:600px;margin:20px 0;">
+                        <source src="TJJX.mp4" type="video/mp4">
+                        您的浏览器不支持视频播放。
+                    </video>
+                </div>
+            </div>
+            <div class="level-card">
+                <h3>高级</h3>
+                <div class="level-content">
+                    <!-- 高级内容将通过JavaScript动态生成 -->
+                    <video controls style="width:100%;max-width:600px;margin:20px 0;">
+                        <source src="YCJX.mp4" type="video/mp4">
+                        您的浏览器不支持视频播放。
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 社区区块 -->
+    <section id="community" class="community-section">
+        <h2>武术社区</h2>
+        <div class="community-content">
+            <div class="comments-section">
+                <!-- 评论内容将通过JavaScript动态生成 -->
+            </div>
+            <div class="progress-section">
+                <!-- 学习进度将通过JavaScript动态生成 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部区域 -->
+    <footer>
+        <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-weixin"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-weibo"></i></a>
+            <a href="https://v.douyin.com/5kQvq8AR8hk/" class="social-icon" title="点击可以跳转过去" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="footer-info">
+            <p>&copy; 2024 V5数字武馆. 保留所有权利.</p>
+            <a href="#">网站地图</a>
+            <a href="#contact">联系我们</a>
+        </div>
+    </footer>
+
+    <!-- AI助手 -->
+    <div id="aiAssistant" class="ai-assistant">
+        <button id="aiButton" class="ai-assistant-btn">
+            <i class="fas fa-robot"></i>
+        </button>
+        <div id="aiChat" class="ai-chat-window">
+            <div class="ai-chat-header">
+                <h3>小武AI助教</h3>
+                <button id="closeButton" class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div id="aiMessages" class="ai-chat-messages">
+                <div class="message ai-message">
+                    <i class="fas fa-robot"></i>
+                    <div class="message-content">
+                        我是V5数字武馆的AI助教，很高兴为您服务。请问有什么可以帮您的吗？
+                    </div>
+                </div>
+            </div>
+            <div class="ai-chat-input">
+                <input id="aiInput" type="text" placeholder="输入您的问题...">
+                <button id="sendButton" class="send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入必要的JavaScript库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    
+    <!-- AI助手脚本 -->
+    <script>
+        // 等待页面加载完成
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('页面加载完成，初始化AI助手...');
+
+            // 获取所有需要的元素
+            const aiButton = document.getElementById('aiButton');
+            const aiChat = document.getElementById('aiChat');
+            const closeButton = document.getElementById('closeButton');
+            const aiInput = document.getElementById('aiInput');
+            const sendButton = document.getElementById('sendButton');
+            const aiMessages = document.getElementById('aiMessages');
+
+            // 检查元素是否存在
+            if (!aiButton || !aiChat || !closeButton || !aiInput || !sendButton || !aiMessages) {
+                console.error('未找到必要的元素');
+                return;
+            }
+
+            // 切换聊天窗口显示状态
+            function toggleChat() {
+                console.log('切换聊天窗口');
+                aiChat.classList.toggle('active');
+                if (aiChat.classList.contains('active')) {
+                    aiInput.focus();
+                }
+            }
+
+            // 发送消息
+            async function sendMessage() {
+                const message = aiInput.value.trim();
+                if (!message) return;
+
+                console.log('发送消息:', message);
+
+                // 添加用户消息
+                const userMessage = document.createElement('div');
+                userMessage.className = 'message user-message';
+                userMessage.innerHTML = `
+                    <i class="fas fa-user"></i>
+                    <div class="message-content">${message}</div>
+                `;
+                aiMessages.appendChild(userMessage);
+
+                // 清空输入框
+                aiInput.value = '';
+
+                // 显示加载状态
+                const loadingMessage = document.createElement('div');
+                loadingMessage.className = 'message ai-message loading';
+                loadingMessage.innerHTML = `
+                    <i class="fas fa-robot"></i>
+                    <div class="message-content">正在思考...</div>
+                `;
+                aiMessages.appendChild(loadingMessage);
+
+                try {
+                    // 调用API获取响应
+                    const response = await fetch('https://api.deepseek.com/chat/completions', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Authorization': 'Bearer sk-d48ed2b64927480883e4f8c18f4e2007'
+                        },
+                        body: JSON.stringify({
+                            model: 'deepseek-chat',
+                            messages: [
+                                {
+                                    role: "system",
+                                    content: "你是V5数字武馆的AI助教，负责回答用户关于武术的问题。"
+                                },
+                                {
+                                    role: "user",
+                                    content: message
+                                }
+                            ],
+                            stream: false
+                        })
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`API请求失败: ${response.status}`);
+                    }
+
+                    const data = await response.json();
+                    const aiResponse = data.choices[0].message.content;
+                    
+                    // 移除加载状态
+                    loadingMessage.remove();
+
+                    // 添加AI响应
+                    const aiMessage = document.createElement('div');
+                    aiMessage.className = 'message ai-message';
+                    aiMessage.innerHTML = `
+                        <i class="fas fa-robot"></i>
+                        <div class="message-content">${aiResponse}</div>
+                    `;
+                    aiMessages.appendChild(aiMessage);
+                } catch (error) {
+                    console.error('发送消息错误:', error);
+                    loadingMessage.remove();
+                    const errorMessage = document.createElement('div');
+                    errorMessage.className = 'message ai-message error';
+                    errorMessage.innerHTML = `
+                        <i class="fas fa-robot"></i>
+                        <div class="message-content">抱歉，我暂时无法回答您的问题。请稍后再试。</div>
+                    `;
+                    aiMessages.appendChild(errorMessage);
+                }
+
+                // 滚动到底部
+                aiMessages.scrollTop = aiMessages.scrollHeight;
+            }
+
+            // 绑定事件
+            aiButton.addEventListener('click', toggleChat);
+            closeButton.addEventListener('click', toggleChat);
+            sendButton.addEventListener('click', sendMessage);
+            aiInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+
+            console.log('AI助手初始化完成');
+        });
+
+        // 精选视频缩略图点击播放功能
+        document.addEventListener('DOMContentLoaded', function() {
+            var thumbs = document.querySelectorAll('.video-thumb');
+            var mainVideo = document.getElementById('main-video');
+            thumbs.forEach(function(thumb) {
+                thumb.addEventListener('click', function() {
+                    var src = thumb.getAttribute('data-src');
+                    if(mainVideo) {
+                        mainVideo.querySelector('source').src = src;
+                        mainVideo.load();
+                        mainVideo.play();
+                    }
+                });
+            });
+        });
+
+        // 精选视频分类按钮点击播放指定视频
+        document.addEventListener('DOMContentLoaded', function() {
+            var categoryBtns = document.querySelectorAll('.category-btn');
+            var mainVideo = document.getElementById('main-video');
+            categoryBtns.forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    if(btn.textContent.trim() === '太极拳') {
+                        if(mainVideo) {
+                            mainVideo.querySelector('source').src = 'TJZS.mp4';
+                            mainVideo.load();
+                            mainVideo.play();
+                        }
+                    }
+                    if(btn.textContent.trim() === '少林功夫') {
+                        if(mainVideo) {
+                            mainVideo.querySelector('source').src = 'SLJXSP.mp4';
+                            mainVideo.load();
+                            mainVideo.play();
+                        }
+                    }
+                    if(btn.textContent.trim() === '咏春拳') {
+                        if(mainVideo) {
+                            mainVideo.querySelector('source').src = 'YCJXSP.mp4';
+                            mainVideo.load();
+                            mainVideo.play();
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+    
+    <!-- 自定义脚本 -->
+    <script src="script.js" defer></script>
+</body>
+</html> 
